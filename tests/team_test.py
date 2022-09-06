@@ -32,16 +32,13 @@ class TestTeam(unittest.TestCase):
 
 #   Extensions
 #   Hint You do not need to add 'points' as a parameter in your '__init__' function inside your 'Team' class. You can still add it as a class properties. 
-    @unittest.skip("delete this line to run the test")
     def test_team_has_points(self):
         self.assertEqual(0, self.team.points)
         
-    @unittest.skip("delete this line to run the test")
     def test_play_game__win(self):
         self.team.play_game(True)
         self.assertEqual(3, self.team.points)
 
-    @unittest.skip("delete this line to run the test")
     def test_play_game__lose(self):
         self.team.play_game(False)
         self.assertEqual(0, self.team.points)
